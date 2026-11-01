@@ -31,7 +31,7 @@
     "vitest": "^3.2.7"
   },
   "klarsend": {
-    "mirroredFrom": "klarsend@9c536e5",
+    "mirroredFrom": "klarsend@6c3e1cf",
     "modules": [
       "vault-crypto",
       "session",
