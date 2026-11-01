@@ -1,0 +1,45 @@
+{
+  "name": "klarsend-core",
+  "version": "0.0.0-mirror",
+  "private": true,
+  "description": "The encrypting core of the Klarsend client, published so its security claims can be read and its tests run. A one-way mirror; see README.md.",
+  "license": "Apache-2.0",
+  "homepage": "https://klarsend.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klarsend/klarsend-core.git"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@angular/core": "^19.2.0",
+    "@angular/router": "^19.2.0",
+    "@scure/bip39": "^2.2.0",
+    "@simplewebauthn/browser": "^13.3.0",
+    "hash-wasm": "^4.12.0"
+  },
+  "devDependencies": {
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "@aws-sdk/client-s3": "^3.1085.0",
+    "@aws-sdk/s3-request-presigner": "^3.1085.0",
+    "@azure/storage-blob": "^12.33.0",
+    "@smithy/protocol-http": "^5.5.8",
+    "@smithy/signature-v4": "^5.6.4",
+    "typescript": "~5.7.2",
+    "vitest": "^3.2.7"
+  },
+  "klarsend": {
+    "mirroredFrom": "klarsend@9c536e5",
+    "modules": [
+      "vault-crypto",
+      "session",
+      "vault-sync",
+      "auth",
+      "sas",
+      "sigv4"
+    ],
+    "files": 62
+  }
+}
